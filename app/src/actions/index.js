@@ -13,7 +13,7 @@ function sleeper(ms) {
 
 export const getData = () => dispatch => {
     dispatch( { type: FETCH_DATA });
-    axios.get("htps://www.boredapi.com/api/activity/")
+    axios.get("https://www.boredapi.com/api/activity/")
     .then(sleeper(1000))
     .then(response => {
         console.log(response.data);
