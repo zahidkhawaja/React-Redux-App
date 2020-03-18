@@ -15,6 +15,7 @@ const initialState = {
 };
 
 export const activityReducer = (state = initialState, action) => {
+    console.log("PAYLOAD", action.payload);
     switch (action.type) {
         case FETCH_DATA:
             return {

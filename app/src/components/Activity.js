@@ -15,6 +15,7 @@ const Activity = props => {
             <button onClick = {handleGetData} className = "randombutton">Generate</button>
             <div className = "randomactivity">
             <h2>{props.activity.activity}</h2>
+            <h2>{props.error}</h2>
             </div>
         </div>
     );
@@ -23,7 +24,8 @@ const Activity = props => {
 const mapStateToProps = state => {
     return {
         ...state,
-        activity: state.activity[0]
+        activity: state.activity[0],
+        error: state.error
     };
 };
 
