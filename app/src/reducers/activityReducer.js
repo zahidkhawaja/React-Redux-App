@@ -3,12 +3,12 @@ import { FETCH_DATA, UPDATE_ACTIVITY, SET_ERROR } from "../actions/index";
 const initialState = {
     activity: [{
         "activity": "",
-        "accessibility": 0.9,
+        "accessibility": 0,
         "type": "",
-        "participants": 1,
-        "price": 0.05,
+        "participants": 0,
+        "price": 0,
         "link": "",
-        "key": "4296813"
+        "key": ""
       }],
     isFetchingData: false,
     error: ""

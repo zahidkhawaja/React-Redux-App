@@ -12,9 +12,10 @@ const Activity = props => {
 
     return (
         <div className = "activity">
-            <button onClick = {handleGetData}>Get Random Activity</button>
-            <h3>Random Activity:</h3>
+            <button onClick = {handleGetData} className = "randombutton">Generate</button>
+            <div className = "randomactivity">
             <h2>{props.activity.activity}</h2>
+            </div>
         </div>
     );
 };

@@ -13,7 +13,7 @@ function App() {
     <Provider store = {store}>
     <div className="App">
       <header className="App-header">
-        <h1>React Redux App</h1>
+        <h1>Random Activity Generator</h1>
       </header>
       <Activity/>
     </div>
