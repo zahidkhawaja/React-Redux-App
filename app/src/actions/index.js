@@ -21,6 +21,6 @@ export const getData = () => dispatch => {
     })
     .catch(error => {
         console.log("Error", error);
-        dispatch({ type: SET_ERROR, payload: "Error fetching data from API"});
+        dispatch({ type: SET_ERROR, payload: "Error fetching data from API!"});
     });
 };
