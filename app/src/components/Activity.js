@@ -15,7 +15,9 @@ const Activity = props => {
         {props.isFetchingData ? (
             <div className = "activity">
             <button onClick = {handleGetData} className = "randombutton">Generate</button>
+            <div className = "loading">
             <h1>Loading...</h1>
+            </div>
             </div>
         ) : (
         <div className = "activity">

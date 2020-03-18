@@ -44,3 +44,7 @@ h1 {
 .activity {
   margin: 25px;
 }
+
+.loading {
+  font-style: italic;
+}
