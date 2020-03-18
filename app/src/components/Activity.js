@@ -11,6 +11,13 @@ const Activity = props => {
     };
 
     return (
+        <>
+        {props.isFetchingData ? (
+            <div className = "activity">
+            <button onClick = {handleGetData} className = "randombutton">Generate</button>
+            <h1>Loading...</h1>
+            </div>
+        ) : (
         <div className = "activity">
             <button onClick = {handleGetData} className = "randombutton">Generate</button>
             <div className = "randomactivity">
@@ -18,6 +25,9 @@ const Activity = props => {
             <h2>{props.error}</h2>
             </div>
         </div>
+        )}
+        </>
+
     );
 };
 
@@ -25,7 +35,8 @@ const mapStateToProps = state => {
     return {
         ...state,
         activity: state.activity[0],
-        error: state.error
+        error: state.error,
+        isFetchingData: state.isFetchingData
     };
 };
 
